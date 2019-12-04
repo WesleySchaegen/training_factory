@@ -1,18 +1,35 @@
-.container {
-    height: 20%;
-    width: 100%;
-    border-bottom: #AA3333;
-    color: #AA3333;
-    background-color: #AA3333;
-}
-.container form {
-    background-color: #AA3333;
-    color: #AA3333;
-    float: right;
+.container {}
+#hoofd {
+    box-sizing: border-box;
+    border-bottom:3px solid #AA3333;
 }
 .logo {
     background-color: #AA3333;
-    width: 60%;
+    width: 100%;
     height: 100%;
     float: right;
+}
+.container img {
+    width: 50%;
+}
+.navbar {
+    margin-bottom: 10px;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+}
+.container footer {
+    text-align: center;
+    background-color: #565656;
+    color: white;
+}
+.container h5 {
+    color: #AA3333;
+}
+#borders {
+    box-sizing: border-box;
+    border: 1px solid #222222;
+    padding: 10px;
+    margin: 8px;
 }

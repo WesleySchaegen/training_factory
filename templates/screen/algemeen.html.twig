@@ -1,23 +1,58 @@
-{% extends 'base.html.twig' %}
-{% block body %}
-    <div class="container" >
-        <div class="row">
-            <div class="col">
-                <div id="Logo">
-                    <img src="{{ asset('/img/logo.png') }}" alt="Logo">
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>{% block title %}Welcome!{% endblock %}</title>
+            {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="{{ asset('../css/algemeen.css') }}">
+            {% endblock %}
+        </head>
+        <body>
+            {% block body %}
+
+                <div class="container" >
+                    <div id="hoofd">
+                        <div id="Logo">
+                            <img src="{{ asset('../img/logo.png') }}" alt="Logo">
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapse_target">
+                            <ul class="navbar-nav">
+                                {% block nav %}{% endblock %}
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="borders">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img src="{{ asset('../img/pic1.png') }}" alt="Logo">
+                            </div>
+                            <div class="col-sm">
+                                <img src="{{ asset('../img/pic2.png') }}" alt="Logo">
+                            </div>
+                            <div class="col-sm">
+                                <img src="{{ asset('../img/pic3.png') }}" alt="Logo">
+                            </div>
+                        </div>
+                        <div id="borders">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+                    <footer class="fixed-bottom">
+                        <H5>Training Centrum Den Haag 010 519 0532</H5>
+                            <a>developed by FastDevelopment 2019</a>
+                    </footer>
                 </div>
-            </div>
-            <div class="col">
-                <div class="float-right">
-                <form method="post" action="">
-                    <input type="text" name="username" placeholder="username">       <br>
-                    <input type="text" name="wachtwoord" placeholder="wachtwoord">   <br>
-                    <input type="submit" name="inloggen" value="inloggen"> <input type="button" name="resww" value="reset ww">
-                </form>
-            </div>
-            </div>
-        </div>
-
-
-    </div>
-{% endblock %}
+                {% block javascripts %}
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                {% endblock %}
+            {% endblock %}
+        </body>
+    </html>
