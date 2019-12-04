@@ -27,6 +27,10 @@
 .container h5 {
     color: #AA3333;
 }
+.container H4 {
+    color: #AA3333;
+    text-align: center;
+}
 #borders {
     box-sizing: border-box;
     border: 1px solid #222222;
