@@ -37,7 +37,7 @@ class BoezoekerController extends AbstractController
      */
     public function gregels()
     {
-        return $this->render('screen/bezoeker/gedragregels.html.twig');
+        return $this->render('screen/bezoeker/gedragsregels.html.twig');
     }
     /**
      * @Route("/bezoeker/lokatie&contact", name="app_bezoek_locatie")

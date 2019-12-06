@@ -1,0 +1,28 @@
+{% extends 'screen/algemeen.html.twig' %}
+    {% block nav %}
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_bezoek_aanbod') }}">Trainings Aanbod</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_bezoek_lidword') }}">Lid Worden</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_bezoek_gregels') }}">Gedragsregels</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_bezoek_locatie') }}">Lokatie & contact</a>
+        </li>
+    {% endblock %}
+    {% block content %}
+
+            <H4>Welkom bij Trainings Centrum Den Haag</H4>
+        <a>
+            Den Haag Traing Center is een sportschool waar onder professionele begeleiding<br>
+            in een veilige omgeving verschillende soorten martial arts-, indoor bootcamp, <br>
+            personal- en small group trainingen worden aangeboden. Hier kan je je inschrijven <br>
+            op een les of uitschrijven op een les.
+        </a>
+    {% endblock %}
