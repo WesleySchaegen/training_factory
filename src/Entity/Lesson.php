@@ -39,12 +39,12 @@ class Lesson
     private $max_persons;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\training", inversedBy="lessons")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Training", inversedBy="lessons")
      */
     private $training;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\instructor", inversedBy="lessons")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Instructor", inversedBy="lessons")
      */
     private $instructor;
 

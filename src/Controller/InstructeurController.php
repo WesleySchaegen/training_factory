@@ -4,7 +4,9 @@
 namespace App\Controller;
 
 
-class InstructeurController
-{
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 
+class InstructeurController extends AbstractController
+{
 }

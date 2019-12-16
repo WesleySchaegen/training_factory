@@ -12,6 +12,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BoezoekerController extends AbstractController
 {
+//    public function new(EntityManagerInterface $em)
+//    {
+//        $form = $this->createForm(RegisFormType::class);
+//
+//        return $this->render('screen/bezoeker/registreren.html.twig',[
+//            'regisForm'
+//        ])
+//    }
 
     /**
      * @Route("/", name="app_bezoek_homepage")

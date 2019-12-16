@@ -1,1 +1,19 @@
 {% extends 'screen/algemeen.html.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Training toevoegen</h1>
+
+            {{ form_start(regisForm)}}
+            {{ form_widget(regisForm) }}
+
+            <button type="submit" class="btn btn-primary">save</button>
+            {{ form_end(regisForm) }}
+        </div>
+    </div>
+    {% for msg in app.session.flashBag.get('succes') %}
+        <div class="alert alert-success">
+            {{ msg }}
+        </div>
+    {% endfor %}
+{% endblock %}

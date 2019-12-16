@@ -69,7 +69,7 @@ class Instructor
     private $salary;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Lesson", mappedBy="instructor")
+     * @ORM\OneToMany(targetEntity="App\Entity\Lesson", mappedBy="Instructor")
      */
     private $lessons;
 

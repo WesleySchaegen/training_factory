@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b04351-0152-4bd5-ab4c-d238a3692d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/training_factory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/training_factory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegisFromType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/bezoeker/lokatiecontact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/bezoeker/lokatiecontact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdministratieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdministratieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/InstructeurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InstructeurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Instructor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Instructor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Training.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Training.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/screen/admin/trainingen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/admin/trainingen.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,14 +159,14 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wesley Schaegen\training_factory\public" />
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\admin" />
       <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\instructeur" />
       <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\leden" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Wesley Schaegen\training_factory\public" />
-      <recent name="C:\Users\Wesley Schaegen\training_factory\templates" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -190,7 +196,7 @@
       <workItem from="1575536514296" duration="16181000" />
       <workItem from="1575972538276" duration="1688000" />
       <workItem from="1575975046741" duration="167000" />
-      <workItem from="1575975324828" duration="9951000" />
+      <workItem from="1575975324828" duration="19841000" />
     </task>
     <servers />
   </component>
@@ -215,5 +221,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575975346610" />
+    <state x="1202" y="337" key="NewPhpClassDialog" timestamp="1576486362956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1202" y="337" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576486362956" />
+    <state x="657" y="257" width="736" height="526" key="find.popup" timestamp="1576496533776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="657" y="257" width="736" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576496533776" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576496510703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576496510703" />
   </component>
 </project>
