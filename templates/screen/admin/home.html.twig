@@ -4,16 +4,13 @@
             <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ path('app_bezoek_aanbod') }}">Trainings Aanbod</a>
+            <a class="nav-link" href="{{ path('app_admin_instructeurs') }}">Instructeurs</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ path('app_bezoek_lidword') }}">Lid Worden</a>
+            <a class="nav-link" href="{{ path('app_admin_leden') }}">Leden</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ path('app_bezoek_gregels') }}">Gedragsregels</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ path('app_bezoek_locatie') }}">Lokatie & contact</a>
+            <a class="nav-link" href="{{ path('app_admin_training') }}">Trainingen</a>
         </li>
     {% endblock %}
     {% block content %}

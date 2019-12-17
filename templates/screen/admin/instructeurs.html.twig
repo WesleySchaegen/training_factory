@@ -1,1 +1,15 @@
 {% extends 'screen/algemeen.html.twig' %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_admin_homepage') }}">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Instructeurs</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_admin_leden') }}">Leden</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_admin_training') }}">Trainingen</a>
+    </li>
+{% endblock %}

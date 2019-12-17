@@ -1,0 +1,41 @@
+{% extends 'screen/algemeen.html.twig' %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link " href="{{ path('app_admin_homepage') }}">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_admin_instructeurs') }}">Instructeurs</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_admin_leden') }}">Leden</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Trainingen</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <h1>Overzicht Trainingen</h1>
+    <table class="table">
+        <thead>
+            <th>Naam</th>
+            <th>Omschrijving</th>
+            <th>Duratie</th>
+            <th>Prijs</th>
+            <th>Aanpassen</th>
+            <th>Verwijderen</th>
+        </thead>
+        <tbody>
+            {% for training in trainingen %}
+        <tr>
+            <td>{{ training.naam }}</td>
+            <td>{{ training.description }}</td>
+            <td>{{ training.duration|date('H:i') }}</td>
+            <td>{{ training.costs }}</td>
+            <td><button class="btn btn-info" id="succesbtn-3">Aanpassen</button></td>
+            <td><button class="btn btn-danger" id="succesbtn-3">Verwijderen</button></td>
+        </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
