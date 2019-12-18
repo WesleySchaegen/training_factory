@@ -5,7 +5,7 @@ namespace App\Controller;
 
 
 use App\Entity\Training;
-use App\Form\RegisFromType;
+use App\Form\TrainFromType;
 use Doctrine\ORM\EntityManagerInterface;
 use phpDocumentor\Reflection\Types\This;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -57,14 +57,34 @@ class AdministratieController extends AbstractController
      */
     public function newTraining(Request $request, EntityManagerInterface $em)
     {
-        $form = $this->createForm(RegisFromType::class);
+        $form = $this->createForm(TrainFromType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $training = $form->getData();
             $em->persist($training);
             $em->flush();
             $this->addFlash('succes', 'Training aangemaakt');
-            return $this->redirectToRoute('app_bezoek_homepage');
+            return $this->redirectToRoute('app_admin_training');
+        }
+
+        return $this->render('screen/admin/trainingen.html.twig',
+            ['trainForm' => $form->createView()]);
+    }
+
+    /**
+     * @Route("/admin/trainingaanpas/{id}", name="app_admin_trainingaanpas")
+     */
+    public function aanpas($id, Request $request, EntityManagerInterface $em)
+    {
+        $trainingObject =  $em->getRepository(Training::class)->find($id);
+        $form = $this->createForm(TrainFromType::class, $trainingObject);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $training = $form->getData();
+            $em->persist($training);
+            $em->flush();
+            $this->addFlash('succes', 'Training bewerkt');
+            return $this->redirectToRoute('app_admin_training');
         }
 
         return $this->render('screen/admin/trainingen.html.twig',

@@ -16,6 +16,7 @@
 
 {% block content %}
     <h1>Overzicht Trainingen</h1>
+    <button class="btn btn-info" id="succesbtn-3" onclick="location.href='{{ path('app_admin_trainingen') }}';">Toevoegen</button>
     <table class="table">
         <thead>
             <th>Naam</th>
@@ -32,7 +33,7 @@
             <td>{{ training.description }}</td>
             <td>{{ training.duration|date('H:i') }}</td>
             <td>{{ training.costs }}</td>
-            <td><button class="btn btn-info" id="succesbtn-3">Aanpassen</button></td>
+            <td><button class="btn btn-info" id="succesbtn-3" onclick="location.href='{{ path('app_admin_trainingaanpas', {id: training.id }) }}';">Aanpassen</button></td>
             <td><button class="btn btn-danger" id="succesbtn-3">Verwijderen</button></td>
         </tr>
             {% endfor %}

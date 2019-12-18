@@ -11,6 +11,12 @@
         <body>
             {% block body %}
 
+                {% for msg in app.session.flashBag.get('succes') %}
+                <div class="alert alert-success">
+                    {{ msg }}
+                </div>
+                {% endfor %}
+
                 <div class="container" >
                     <div id="hoofd">
                         <div id="Logo">
