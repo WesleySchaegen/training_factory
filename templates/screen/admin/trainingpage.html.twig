@@ -34,7 +34,7 @@
             <td>{{ training.duration|date('H:i') }}</td>
             <td>{{ training.costs }}</td>
             <td><button class="btn btn-info" id="succesbtn-3" onclick="location.href='{{ path('app_admin_trainingaanpas', {id: training.id }) }}';">Aanpassen</button></td>
-            <td><button class="btn btn-danger" id="succesbtn-3">Verwijderen</button></td>
+            <td><button class="btn btn-danger" id="succesbtn-3" onclick="location.href='{{ path('app_admin_trainingdelete', {id: training.id}) }}'">Verwijderen</button></td>
         </tr>
             {% endfor %}
         </tbody>

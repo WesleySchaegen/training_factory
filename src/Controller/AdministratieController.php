@@ -90,4 +90,15 @@ class AdministratieController extends AbstractController
         return $this->render('screen/admin/trainingen.html.twig',
             ['trainForm' => $form->createView()]);
     }
+    /**
+     * @Route("/admin/trainingdelete/{id}", name="app_admin_trainingdelete")
+     */
+    public function delete($id, Request $request, EntityManagerInterface $em)
+    {
+        $traingObject = $em->getRepository(Training::class)->find($id);
+        $em->remove($traingObject);
+        $em->flush();
+        $this->addFlash('succes', 'Training verwijderd');
+        return $this->redirectToRoute('app_admin_training');
+    }
 }

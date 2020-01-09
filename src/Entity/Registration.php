@@ -22,7 +22,7 @@ class Registration
     private $payment;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\member", inversedBy="registrations")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Member", inversedBy="registrations")
      */
     private $member;
 

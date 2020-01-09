@@ -1,1 +1,39 @@
 {% extends 'screen/algemeen.html.twig' %}
+    {% block nav %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_instructeur_homepage') }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_instructeur_plannen') }}">Plannen lessen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Lessen beheer</a>
+        </li>
+    {% endblock %}
+{% block content %}
+    <h1>Lessen beheer</h1>
+    <table class="table">
+        <thead>
+        <th>Datum</th>
+        <th>Tijd</th>
+        <th>Lokaal</th>
+        <th>Sport</th>
+        <th>Aantal ingeschreven deelnemers</th>
+        <th>Deelnemers lijst</th>
+        <th>Aanpassen</th>
+        <th>Verwijderen</th>
+        </thead>
+        <tbody>
+        {% for lesson in lessons %}
+            <tr>
+                <td>{{ lesson.date|date('d-m-y') }}</td>
+                <td>{{ lesson.time|date('H:i') }}</td>
+                <td>{{ lesson.location }}</td>
+                <td>{{ lesson.training.naam }}</td>
+                <td><button class="btn btn-info" id="succesbtn-3" onclick="location.href='{{ path('app_admin_trainingaanpas', {id: lesson.id }) }}';">Aanpassen</button></td>
+                <td><button class="btn btn-danger" id="succesbtn-3" onclick="location.href='{{ path('app_admin_lessondelete', {id: lesson.id}) }}'">Verwijderen</button></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

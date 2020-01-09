@@ -1,1 +1,26 @@
 {% extends 'screen/algemeen.html.twig' %}
+    {% block nav %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_instructeur_homepage') }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Plannen lessen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_instructeur_lesbeheren') }}">Lessen beheer</a>
+        </li>
+    {% endblock %}
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <h1>Plannen lesson</h1>
+
+            {{ form_start(lessonForm)}}
+            {{ form_widget(lessonForm) }}
+
+            <button type="submit" class="btn btn-primary">save</button>
+            {{ form_end(lessonForm) }}
+        </div>
+    </div>
+{% endblock %}
