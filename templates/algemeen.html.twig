@@ -11,37 +11,14 @@
         <body>
             {% block body %}
 
-                {% for msg in app.session.flashBag.get('succes') %}
-                <div class="alert alert-success">
-                    {{ msg }}
-                </div>
-                {% endfor %}
+
 
                 <div class="container" >
                     <div id="hoofd">
                         <div id="Logo">
                             <img src="{{ asset('../img/logo.png') }}" alt="Logo">
-
-                            <div class="float-right">
-                                <p class="text-danger text center">
-                                {% if app.user %}
-                                    Welkom {{ app.user.firstname }}
-                                <br>
-                                    {{ app.user.roles[0]|lower }}
-                                    <br>
-                                <button type="button" class="btn btn-danger mt-1"
-                                        onclick="location.href='{{ path('app_logout') }}';">Uitloggen
-                                </button>
-                                {% else %}
-                                    <button type="button" class="btn btn-danger mt-1"
-                                            onclick="location.href='{{ path('app_login') }}';">Inloggen
-                                    </button>
-                                {% endif %}
-                                </p>
+                        </div>
                     </div>
-                    </div>
-                    </div>
-
                     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
                         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
                             <span class="navbar-toggler-icon"></span>

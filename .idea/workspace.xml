@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b04351-0152-4bd5-ab4c-d238a3692d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/LessonFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/algemeen.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/training_factory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/training_factory.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdministratieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdministratieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/InstructeurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InstructeurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Instructor.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Member.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/admin/trainingpage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/admin/trainingpage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/admin/trainingpageanpas.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/instructeur/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/instructeur/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/instructeur/lesbeheren.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/instructeur/lesbeheren.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/instructeur/plannen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/instructeur/plannen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127081805.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127092140.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127092301.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/screen/bezoeker/trainingbod.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/bezoeker/trainingbod.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +150,8 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UBu8GSITYRiV7mXlv7Voa8HAii" />
@@ -155,18 +164,20 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../the_spacebar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\admin" />
-      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\instructeur" />
-      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\leden" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wesley Schaegen\training_factory\public" />
       <recent name="C:\Users\Wesley Schaegen\training_factory\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates" />
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\security" />
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\admin" />
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\instructeur" />
+      <recent name="C:\Users\Wesley Schaegen\training_factory\templates\screen\leden" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -197,6 +208,7 @@
       <workItem from="1575972538276" duration="1688000" />
       <workItem from="1575975046741" duration="167000" />
       <workItem from="1575975324828" duration="35541000" />
+      <workItem from="1578654625147" duration="8589000" />
     </task>
     <servers />
   </component>
@@ -225,10 +237,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576658869674" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578569460837">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578660239263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578569460837" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578660239263" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578664477504">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578664477504" />
     <state x="1202" y="337" key="NewPhpClassDialog" timestamp="1578479173820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,9 +253,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="657" y="257" width="736" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578403581747" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576496510703">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578662129311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576496510703" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578662129311" />
   </component>
 </project>

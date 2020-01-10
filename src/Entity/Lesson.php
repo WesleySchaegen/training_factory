@@ -50,7 +50,7 @@ class Lesson
     private $training;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Instructor", inversedBy="lessons")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="lessons")
      */
     private $instructor;
 
@@ -58,6 +58,12 @@ class Lesson
      * @ORM\OneToMany(targetEntity="App\Entity\Registration", mappedBy="lesson")
      */
     private $registrations;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="lesson")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $instructeur;
 
     public function __construct()
     {
@@ -168,6 +174,18 @@ class Lesson
                 $registration->setLesson(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getInstructeur(): ?User
+    {
+        return $this->instructeur;
+    }
+
+    public function setInstructeur(?User $instructeur): self
+    {
+        $this->instructeur = $instructeur;
 
         return $this;
     }

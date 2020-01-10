@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Entity\Training;
 use App\Form\RegisFormType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -34,7 +35,9 @@ class BoezoekerController extends AbstractController
      */
     public function aanbod()
     {
-        return $this->render('screen/bezoeker/trainingbod.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $trainingen = $em->getRepository(Training::class)->findAll();
+        return $this->render('screen/bezoeker/trainingbod.html.twig',["trainingen"=>$trainingen]);
     }
     /**
      * @Route("/bezoeker/registreren", name="app_bezoek_lidword")

@@ -17,5 +17,23 @@
         </li>
     {% endblock %}
     {% block content %}
-
+        <h1>Overzicht Trainingen</h1>
+        <table class="table">
+            <thead>
+            <th>Naam</th>
+            <th>Omschrijving</th>
+            <th>Duratie</th>
+            <th>Prijs</th>
+            </thead>
+            <tbody>
+            {% for training in trainingen %}
+                <tr>
+                    <td>{{ training.naam }}</td>
+                    <td>{{ training.description }}</td>
+                    <td>{{ training.duration|date('H:i') }}</td>
+                    <td>{{ training.costs }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
     {% endblock %}
