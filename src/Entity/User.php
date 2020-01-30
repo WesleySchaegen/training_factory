@@ -101,12 +101,12 @@ class User implements UserInterface
     private $salary2;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\lesson", mappedBy="instructeur", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Lesson", mappedBy="instructeur", orphanRemoval=true)
      */
     private $lesson;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\registration", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="App\Entity\Registration", mappedBy="user")
      */
     private $registration;
 

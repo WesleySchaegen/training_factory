@@ -44,23 +44,23 @@ class Lesson
     private $max_persons;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Training", inversedBy="lessons")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Training", inversedBy="Lessons")
      * @Assert\NotBlank(message= "vul een naam in")
      */
     private $training;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="lessons")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="Lessons")
      */
     private $instructor;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Registration", mappedBy="lesson")
+     * @ORM\OneToMany(targetEntity="App\Entity\Registration", mappedBy="Lesson")
      */
     private $registrations;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="lesson")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="Lesson")
      * @ORM\JoinColumn(nullable=false)
      */
     private $instructeur;

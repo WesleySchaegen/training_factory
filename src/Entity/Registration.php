@@ -22,17 +22,17 @@ class Registration
     private $payment;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="registrations")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="Registrations")
      */
     private $member;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Lesson", inversedBy="registrations")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Lesson", inversedBy="Registrations")
      */
     private $lesson;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="registration")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="Registration")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;

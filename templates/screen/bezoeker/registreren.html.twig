@@ -17,5 +17,15 @@
         </li>
     {% endblock %}
     {% block content %}
+        <div class="row">
+            <div class="col">
+                <h1>Registreren</h1>
 
+                {{ form_start(regisForm)}}
+                {{ form_widget(regisForm) }}
+
+                <button type="submit" class="btn btn-primary mt-2">save</button>
+                {{ form_end(regisForm) }}
+            </div>
+        </div>
     {% endblock %}

@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b04351-0152-4bd5-ab4c-d238a3692d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/algemeen.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/training_factory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/training_factory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegisFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BoezoekerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Instructor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LedenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LedenController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Member.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127081805.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127092140.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191127092301.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/algemeen.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/screen/bezoeker/trainingbod.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/bezoeker/trainingbod.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/screen/bezoeker/registreren.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/bezoeker/registreren.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/screen/instructeur/plannen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/screen/instructeur/plannen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +200,7 @@
       <workItem from="1575972538276" duration="1688000" />
       <workItem from="1575975046741" duration="167000" />
       <workItem from="1575975324828" duration="35541000" />
-      <workItem from="1578654625147" duration="8589000" />
+      <workItem from="1578654625147" duration="22657000" />
     </task>
     <servers />
   </component>
@@ -241,14 +233,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578660239263" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578664477504">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580382271779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578664477504" />
-    <state x="1202" y="337" key="NewPhpClassDialog" timestamp="1578479173820">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580382271779" />
+    <state x="1202" y="337" key="NewPhpClassDialog" timestamp="1580374070850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1202" y="337" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578479173820" />
+    <state x="1202" y="337" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580374070850" />
     <state x="657" y="257" width="736" height="526" key="find.popup" timestamp="1578403581747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
